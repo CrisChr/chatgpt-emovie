@@ -21,7 +21,12 @@ const useChatGpt = (message, promptId) => {
           message,
           promptId
         })
-      }).then(res => res.json());
+      }).then(res => {
+        if(res.status === 500){
+          return {reply: 'Oops... The 🤖️ is no power'}
+        }
+        return res.json()
+      });
       if(response.reply){
         setData(response.reply)
       }
