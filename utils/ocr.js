@@ -39,6 +39,7 @@ async function getWorkerLocation(path){
 async function startScan(sdk, fileList) {
   const recognizer = await BlinkIDSDK.createBlinkIdSingleSideRecognizer(sdk);
   const recognizerRunner = await BlinkIDSDK.createRecognizerRunner(sdk, [recognizer], true);
+  const inputImageFile = document.getElementById("image-file");
 
   let file = null;
   const imageRegex = RegExp(/^image\//);
@@ -66,7 +67,7 @@ async function startScan(sdk, fileList) {
 
   const processResult = await recognizerRunner.processImage( imageFrame );
   if ( processResult !== BlinkIDSDK.RecognizerResultState.Empty ){
-    const singleSideIDResults = await singleSideIDRecognizer.getResult();
+    const singleSideIDResults = await recognizer.getResult();
     if ( singleSideIDResults.state !== BlinkIDSDK.RecognizerResultState.Empty ){
       console.log( "BlinkID Single-side recognizer results", singleSideIDResults );
     }
