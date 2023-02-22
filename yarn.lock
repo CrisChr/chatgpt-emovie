@@ -205,6 +205,11 @@
   resolved "https://registry.npmmirror.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@microblink/blinkid-in-browser-sdk@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@microblink/blinkid-in-browser-sdk/-/blinkid-in-browser-sdk-6.0.0.tgz#4c28ae352fb0e24720a5f3d01159309b7cbea7d3"
+  integrity sha512-rPqT4RfRzzLkOQtxIBIjPi6yfeWtniMKwDHSKMiEBLXsF+kJMaT2jPZLZZ/cYTimscNZv56RBk/heLGWc4fgiQ==
+
 "@microsoft/fetch-event-source@^2.0.1":
   version "2.0.1"
   resolved "https://registry.npmmirror.com/@microsoft/fetch-event-source/-/fetch-event-source-2.0.1.tgz#9ceecc94b49fbaa15666e38ae8587f64acce007d"

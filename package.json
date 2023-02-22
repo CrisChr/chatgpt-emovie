@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@microblink/blinkid-in-browser-sdk": "^6.0.0",
     "@mui/material": "^5.11.7",
     "@next/font": "13.1.6",
     "eslint": "8.33.0",
