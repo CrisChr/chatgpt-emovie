@@ -51,7 +51,7 @@ async function startScan(sdk, fileList) {
   if ( !file ){
     alert( "No image files provided!" );
     recognizerRunner?.delete();
-    singleSideIDRecognizer?.delete();
+    recognizer?.delete();
     inputImageFile.value = "";
     return;
   }
