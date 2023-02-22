@@ -75,7 +75,7 @@ async function startScan(sdk, fileList) {
   }
 
   recognizerRunner?.delete();
-  singleSideIDRecognizer?.delete();
+  recognizer?.delete();
   inputImageFile.value = "";
 }
 
